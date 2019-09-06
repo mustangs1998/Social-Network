@@ -1,0 +1,368 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en,zxx">
+<head>
+<title>Road Travel Travel Category Flat Bootstrap Responsive Website Template | Home :: W3layouts</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="keywords" content="Road Travel web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web Designs" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--// Meta tag Keywords -->
+
+	<!-- Recent Trips section css files-->
+	<link rel="stylesheet" href="{% static 'travel/css/owl.carousel.css' %}" type="text/css" media="all">
+	<link href="{% static 'travel/css/owl.theme.css' %}" rel="stylesheet">
+	<!-- //Recent Trips section css files -->
+	<link rel="stylesheet" href="{% static 'travel/gal/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'travel/gal/css/style.css' %}">
+ 	<!-- Testimonials -->
+	<link rel="stylesheet" href="{% static 'travel/css/flexslider.css' %}" type="text/css" media="screen" />
+	<!-- //Testimonials -->
+
+	<!-- css files -->
+	<link rel="stylesheet" href="{% static 'travel/css/bootstrap.css' %}"> <!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="{% static 'travel/css/style.css' %}" type="text/css" media="all" /> <!-- Style-CSS -->
+	<link rel="stylesheet" href="{% static 'travel/css/font-awesome.css' %}"> <!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+	<!-- //web-fonts -->
+
+	<link href="{% static 'travel/css/popup-box.css' %}" rel="stylesheet" type="text/css" media="all" /><!-- pop-up css -->
+
+
+</head>
+<body>
+
+
+
+
+
+
+<!-- Header -->
+<div class="header">
+	<nav class="navbar navbar-default">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<h1><a href="/index/">Travelite Tours</a></h1>
+		</div>
+		<div class="top-nav-text">
+			<ul classs="social_agileinfo">
+			<div class="col-sm-4 col-xs-6 social-w3licon">
+				<!--<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>-->
+				<a href="https://www.facebook.com/profile.php?id=100010039087413" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+				<!--<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>-->
+				<a href="https://www.instagram.com/official.vibhuti_0998/" class="social-button instagram"><i class="fa fa-instagram"></i></a>
+			</ul></div>
+				<!--<li><a href="#" class="w3_twitter"><i class="fa fa-twitter"></i></a></li>-->
+				<!--<li><a href="https://www.instagram.com/" class="w3_instagram"><i class="fa fa-instagram"></i></a></li>-->
+				<!--<li><a href="#" class="w3_google"><i class="fa fa-google-plus"></i></a></li>-->
+
+
+
+		<!-- navbar-header -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a class="hvr-underline-from-center " href="/index/">Home</a></li>
+				<li><a href="/index/#gallery"  class="hvr-underline-from-center scroll">Gallery</a></li>
+				<li><a href="/index/#about" class="hvr-underline-from-center scroll">About</a></li>
+				{% if user.is_authenticated %}
+				<li><a href="#" class="hvr-underline-from-center ">Hi.{{ user.username}}</a></li>{}
+				<li><a href="/logout/" class="hvr-underline-from-center ">LogOut</a></li>{}
+				
+				{% else %}
+				<li><a href="/signup/" class="hvr-underline-from-center ">Sign up</a></li>{}
+				{% endif %}
+				<li><a href="/pack/"  class="hvr-underline-from-center" >Popular Packages</a></li>
+				<li><a href="/index/#contact" class="hvr-underline-from-center scroll">Contact</a>
+			</ul>
+		</div>
+
+		<div class="clearfix"> </div>
+	</nav>
+</div>
+<!-- //Header -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% block content %}
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer start here -->
+<section class="footer-agile">
+	<div class="container">
+		<div class="footer-btm-agileinfo">
+			<div class="col-md-3 col-xs-12 footer-grid w3social">
+				<h3>About us</h3>
+				<p class="footer-p1">A road trip is a long distance journey on the road. Typically,road trip are long distances traveled by automobiles
+				our travel guiders are helping you in each and every situation.Enjoy your dream vocation with us.</p>
+
+			</div>
+			<div class="col-md-3 col-xs-12 footer-grid text-right">
+				<h3>Contact Info</h3>
+				<ul>
+					<li><i class="fa fa-phone"></i>261867</li>
+					<li><i class="fa fa-fax"></i>9866754376</li>
+					<li><i class="fa fa-map-marker"></i> Model Town,Yamuna Nagar.</li>
+					<li><i class="fa fa-envelope-o"></i><a href="mailto:imvibhuti364@gmail.com">imvibhuti364@gmail.com</a></li>
+					<li><i class="fa fa-globe"></i><a href="mailto:website@example.com">website@example.com</a></li>
+				</ul>
+			</div>
+			<div class="col-md-6 col-xs-12 footer-grid w3social text-right">
+				<h3>Quick Links</h3>
+				<ul>
+					<li><a href="/index/">Home</a></li>
+					<li><a href="#about" class="scroll">About</a></li>
+					<li><a href="#packages" class="scroll">Popular Packages</a></li>
+					<!--<span data-hover="Popular Packages">Popular Packages</span></a></li>-->
+					<li><a href="#offers" class="scroll">Recent Trips</a></li>
+					<li><a href="#contact" class="scroll">Contact Us</a></li>
+				</ul>
+			</div>
+		<!--	<div class="col-md-4 col-xs-12 footer-grid">
+				<h3>Latest Tweets</h3>
+				<ul class="tweet-agile">
+				<li>
+					<i class="fa fa-twitter-square" aria-hidden="true"></i>
+					<p class="tweet-p1"><a href="mailto:support@company.com">@example</a> sit amet consectetur adipiscing. <a href="#">http://ax.by/zzzz</a></p>
+					<p class="tweet-p2">Posted 3 days ago.</p>
+				</li>
+				<li>
+					<i class="fa fa-twitter-square" aria-hidden="true"></i>
+					<p class="tweet-p1"><a href="mailto:support@company.com">@example</a> sit amet consectetur adipiscing. <a href="#">http://cx.dy/zzzz</a></p>
+					<p class="tweet-p2">Posted 3 days ago.</p>
+				</li>
+			</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="footer-agilem">
+			<div class="col-sm-8 col-xs-9 copy-w3lsright">
+				<p>© 2017 Road Travel. All rights reserved | Design by <a href="http://w3layouts.com"> VIBHUTI</a></p>
+			</div>
+
+			<div class="col-sm-4 col-xs-6 social-w3licon">
+				<!--<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>-->
+				<a href="https://touch.facebook.com/profile.php?lst=100010039087413%3A100010039087413%3A1531303205&viewas=100000686899395&ref=bookmarks" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+				<!--<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>-->
+				<a href="https://www.instagram.com/official.vibhuti_0998/" class="social-button instagram"><i class="fa fa-instagram"></i></a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</section>
+<!-- //footer end here -->
+
+
+<!-- js-scripts -->
+
+
+	<!-- js -->
+	<script type="text/javascript" src="{% static 'travel/js/jquery-2.1.4.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'travel/js/bootstrap.js' %}"></script> <!-- Necessary-JavaScript-File-For-Bootstrap -->
+	<!-- scripts -->
+	<script src="{% static 'catalog/gal/js/jquery.min.js' %}"></script>
+	<script src="{% static 'catalog/gal/js/bootstrap.js' %}"></script>
+	<script src="{% static 'catalog/gal/js/numscroller-1.0.js' %}"></script>
+
+	     <script src="{% static 'travel/gal/js/jquery.min.js' %}"></script>
+
+		<script src="{% static 'travel/gal/js/jquery.filterizr.js' %}"></script>
+
+		<script type="text/javascript">
+			$(function() {
+				$('.filtr-container').filterizr();
+			});
+		</script>
+
+	<!-- //js -->
+
+	<!--  Testimonials js-->
+	<script defer src="{% static 'travel/js/jquery.flexslider.js' %}"></script>
+	<!--Start-slider-script-->
+		<script type="text/javascript">
+
+		$(window).load(function(){
+		  $('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+			  $('body').removeClass('loading');
+			}
+		  });
+		});
+	  </script>
+	<!--End-slider-script-->
+	<!--  //Testimonials js-->
+
+	<!-- Recent Trips js file-->
+	<script src="{% static 'travel/js/owl.carousel.js'' %}"></script>
+		<!-- Recent Trips Script-->
+		<script>
+		$(document).ready(function() {
+			$("#owl-demo").owlCarousel({
+
+				autoPlay: 3000, //Set AutoPlay to 3 seconds
+				autoPlay:true,
+				items : 3,
+				itemsDesktop : [640,5],
+				itemsDesktopSmall : [414,4]
+
+			});
+
+		});
+		</script>
+		<!-- //Recent Trips section Script-->
+	<!-- //Recent Trips js file-->
+
+	<!-- start-smoth-scrolling -->
+	<script src="{% static 'travel/js/SmoothScroll.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'travel/js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{% static 'travel/js/easing.js' %}"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+	</script>
+	<!-- //here ends scrolling icon -->
+	<!-- start-smoth-scrolling -->
+
+	<!-- Banner-js -->
+	<script src="{% static 'travel/js/responsiveslides.min.js' %}"></script>
+	<script>
+		$(function () {
+			$("#slider").responsiveSlides({
+				auto: true,
+				pager:false,
+				nav: true,
+				speed: 1000,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+		});
+	</script>
+
+
+
+	<!-- fliter-JavaScript -->
+		<script src="{% static 'catalog/gal/js/jquery.filterizr.js' %}"></script>
+		<script src="{% static 'catalog/gal/js/controls.js' %}"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.filtr-container').filterizr();
+			});
+		</script>
+	<!-- //Baneer-js -->
+
+	<!-- pop-up-box -->
+		<script src="{% static 'travel/js/jquery.magnific-popup.js' %}" type="text/javascript"></script>
+		<script>
+			$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+				});
+			});
+		</script>
+<!--//pop-up-box -->
+
+
+
+
+
+</body>
+</html>

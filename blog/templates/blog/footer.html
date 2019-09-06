@@ -1,0 +1,46 @@
+<footer class="footer text-white">
+
+  <ul class="pagination">
+    {% if posts.has_previous %}
+     <li class="page-item">
+       <a href="?page={{ posts.previous_page_number }}" class="page-link">&laquo;</a>
+    </li>
+    {% endif %}
+    {% for p in page_range %}
+    {% if posts.number == p %}
+     <li class="page-item active">
+      <a href="?page={{ p }}" class="page-link">{{ p }}</a>
+      </li>
+    {% else %}
+    <li class="page-item ">
+     <a href="?page={{ p }}" class="page-link">{{ p }}</a>
+     </li>
+    {% endif %}
+   {% endfor %}
+   {% if posts.has_next %}
+    <li class="page-item">
+      <a href="?page={{ posts.next_page_number }}" class="page-link">&raquo;</a>
+   </li>
+   {% endif %}
+  </ul>
+    <div class="container">
+        <div class="footer-text">
+  <div class="row">
+    <div class="col-md-4">
+      <a href="#">Contact us</a>
+
+    </div>
+
+    </div>
+    <div class="col-md-4">
+
+
+
+				<p>© 2019 Dil-Ki-Awaaz. All Rights Reserved </p>
+			</div>
+
+
+
+  </div>
+  </div>
+  </footer>

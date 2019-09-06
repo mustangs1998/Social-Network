@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#">Dil-Ki-Awaaz</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="{% url 'post_list' %}">Home <span class="sr-only">(current)</span></a>
+    </li>
+
+    <form class="form-inline my-2 my-lg-0" action="{% url 'post_list' %}">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name='q'>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+<style media="screen">
+
+  .navbar-img {
+  	width: 30px;
+  	height: 35px;
+  	float: left;
+  	background-size: auto 100%;
+  	margin-top: -5px;
+  	margin-right: 5px;
+
+  }
+
+</style>
+
+  </ul>
+  <ul class="navbar-nav">
+    {% if request.user.is_authenticated %}
+     <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       {% if request.user.profile.photo %}
+       <img src="{{ request.user.profile.photo.url }}" alt="" class="navbar-img">
+       {% else %}
+        <img src="/media/index.png" alt="" class="navbar-img">
+       {% endif %}
+       <span>HI {{ request.user|capfirst }}</span>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="{% url 'edit_profile' %}">My Profile</a>
+        <a class="dropdown-item" href="{% url 'post_create' %}">Create New Post</a>
+        <a class="dropdown-item" href="{% url 'user_logout' %}">Logout</a>
+      </div>
+    </li>
+    {% else %}
+    <li class="nav-item">
+	<a href="{% url 'register' %}" class="nav-link">Register</a>
+	</li>
+    <a href="{% url 'user_login' %}" class="nav-link">Login</a>
+    
+    {% endif %}
+ </ul>
+</div>
+</nav>

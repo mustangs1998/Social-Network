@@ -1,0 +1,48 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+
+<div class="messages">
+  {% if messages %}
+    {% for message in messages %}
+    <p class="alert alert-{{ message.tags }}">
+      {{ message }}
+    </p>
+    {% endfor %}
+  {% endif %}
+
+</div>
+
+
+   <div class="container-fluid">
+   <div class="row">
+
+   {% for p in posts %}
+   <div class="col-md-6">
+   <div class="img-thumbnail">
+   <a href="{{ p.get_absolute_url }}">{{ p.title }}</a><small style="float:right">{{ p.created }}</small>
+
+		Author :{{ p.author }}<br>
+
+    <span style="display:block;text-overflow: ellipsis;width: 250px;overflow: hidden; white-space: nowrap;">
+	{{ p.body }}
+	</span>
+  <p align="right"><a href="{{ p.get_absolute_url }}">Read More</a></p>
+
+
+		</div>
+		<br>
+	</div>
+  {% empty %}
+    <div class="container-fluid">
+      <h3>NO Post Found having search "{{ request.GET.q }}"</h3>
+    </div>
+   {% endfor %}
+    </div>
+
+   </div>
+
+
+
+
+
+{% endblock %}

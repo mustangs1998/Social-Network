@@ -1,0 +1,272 @@
+/* gallery */
+.w3ls-section{
+	padding: 5% 0px;
+}
+.w3ls-section h3.center {
+    color: white;
+}
+/*-- portfolio-page --*/
+#port h3.w3l-head,#contact h3.w3l-head {
+    color: #fff;
+}
+.scrollbar.agileits-portfolio-scroll {
+    overflow: initial;
+}
+div#gallery {
+    background:#01c3c3;
+}
+.port-head {
+    text-align: center;
+}
+figure.w3ls-gallery {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+}
+figure.w3ls-gallery:hover figcaption.w3layouts-caption {
+    -ms-filter: alpha(Opacity=100);
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    top: 0;
+}
+
+figcaption.w3layouts-caption {
+    -ms-filter:alpha(Opacity=0);
+    filter: alpha(opacity=0);
+    opacity: 0;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+	top: -100%;
+    background: rgba(6, 96, 147, 0.77);
+    color: #fff;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transition-delay: .5s;
+    -moz-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    -ms-transition-delay: .5s;
+    transition-delay: .5s;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+	    text-align: center;
+}
+figcaption h3 {
+    font-weight: 300;
+    font-size: 1.7em;
+    color: #fff;
+    margin-bottom: 0;
+    position: relative;
+    left: 100%;
+    text-transform: capitalize;
+    margin-top: 10px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    transition: all .5s;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    transition-delay: 1s;
+}
+figcaption p {
+    padding: 10px 20px;
+    margin-bottom: 0;
+    position: relative;
+    left: 100%;
+    font-size: 0.9em;
+    line-height: 2em;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    transition: all .5s;
+    -webkit-transition-delay: 1.3s;
+    -moz-transition-delay: 1.3s;
+    -o-transition-delay: 1.3s;
+    -ms-transition-delay: 1.3s;
+    transition-delay: 1.3s;
+	color:bisque;
+}
+figure:hover h3,figure:hover p {
+    left: 0;
+}
+figcaption a {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 4px 10px;
+    text-decoration: none;
+}
+figcaption a:hover {
+    color: #4f5856;
+    background: #fff;
+}
+
+figure.w3ls-gallery:hover h3,figure.w3ls-gallery:hover p {
+    left: 0;
+}
+
+figcaption.w3layouts-caption a {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 4px 0px;
+    text-decoration: none;
+}
+
+figcaption.w3layouts-caption:hover {
+    color: #4f5856;
+}
+.gallery {
+    padding: 6em 0;
+}
+.ga-top{
+	margin-bottom:3em;
+}
+
+.filtr-item {
+    padding: 0em;
+   width: 24.8%;
+    float: left;
+}
+.filtr-container {
+	width:100%;
+}
+.item-desc {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 1;
+}
+/* Filter controls */
+.simplefilter li, .multifilter li, .sortandshuffle li {
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0 12px;
+    text-transform: uppercase;
+    border: none;
+    background: none;
+    border-bottom: 5px solid #fff;
+}
+.simplefilter li {
+    border: 1px solid transparent;
+    background: none;
+    position: relative;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 1em;
+}
+.simplefilter li.active, .simplefilter li:hover {
+    color: #fff;
+    background: #f04b45;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+/* Shuffle and sort controls */
+select {
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+}
+.sortandshuffle .shuffle-btn {
+    background-color: #dec800;
+}
+.sortandshuffle .sort-btn {
+    background-color: #de0000;
+}
+.sortandshuffle .sort-btn.active {
+    background-color: #9d0000;
+}
+/*----*/
+.filtr-item {
+    transform: scale(1) translate3d(0px, 0px, 0px);
+	-o-transform: scale(1) translate3d(0px, 0px, 0px);
+    transition: all 0.5s ease-out 0ms;
+	-o-transition: all 0.5s ease-out 0ms;
+	transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+}
+
+/*----*/
+ul.simplefilter {
+    text-align: center;
+	margin:4em 0;
+}
+.wthree-s1:hover h4 {
+    color: #fff;
+}
+/*portfolio*/
+
+
+/*-- slider-up-arrow --*/
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 6%;
+    right: 3%;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-indent: 100%;
+    background: url("../images/arrow.png") no-repeat 0px 0px;
+	-webkit-transform: scale(0.85);
+	-moz-transform: scale(0.85);
+	-o-transform: scale(0.85);
+	-ms-transform: scale(0.85);
+    transform: scale(0.85);
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	transition:.5s all;
+}
+#toTop:hover {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+    transform: scale(1);
+}
+#toTopHover {
+	width: 40px;
+	height: 40px;
+	display: block;
+	overflow: hidden;
+	float: right;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	transform: scale(1);
+}
+/*-- //slider-up-arrow --*/
+/* //gallery */

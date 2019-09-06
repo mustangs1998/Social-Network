@@ -1,0 +1,55 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<div class="messages">
+  {% if messages %}
+    {% for message in messages %}
+    <p class="alert alert-{{ message.tags }}">
+      {{ message }}
+    </p>
+    {% endfor %}
+  {% endif %}
+
+</div>
+
+<div class="container-fluid">
+<h3>{{ Post.title }}</h3>
+<small>Post created by : {{ Post.author }}</small>
+<hr>
+<p>{{ Post.body }}</P>
+
+<!--<form  action="#" method="post">
+  {% csrf_token %}
+  <button type="submit" name="post_id" value="{{ post.id }}" class="btn btn-primary">Like</button>
+
+</form>-->
+</div>
+{% if Post.author == request.user %}
+<div class="section-1" style="float:right">
+  <a href="{% url 'post_edit' id=Post.id %}">
+    <button type="button" class="btn btn-outline.success">Edit</button>
+
+  </a>
+  <a href="{% url 'post_delete' id=Post.id %}" id="delete">
+    <button type="button" class="btn btn-danger">Delete</button>
+
+  </a>
+</div>
+{% endif %}
+
+
+<br><br>
+<hr>
+
+
+<div class="main-comment-section">
+ {% include 'blog/comments.html' %}
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}
