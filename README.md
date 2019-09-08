@@ -4,7 +4,7 @@ this is a small social network , where people can come , register themselves,Log
 
 How it works 
 
-1)Clone this repository
+1)Clone this repository and put the downloaded file on desktop
 
 2)Use Powershell to reach the project directory 
 
